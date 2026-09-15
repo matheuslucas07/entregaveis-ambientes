@@ -1,22 +1,43 @@
 # Entregável de Algoritmos
 
-Implementação de algoritmos fundamentais nas linguagens **Java** e **JavaScript**, desenvolvida como atividade acadêmica.
+Implementação de algoritmos fundamentais em **Java** e **JavaScript**, desenvolvida como atividade acadêmica.
 
 ## 📚 Algoritmos
 
 O projeto contém seis algoritmos:
 
-- 🔢 **Número primo** — verifica se um número inteiro positivo é primo.
-- ➕ **Somatório** — calcula a soma dos elementos de um conjunto de números.
+- 🔢 **Número primo** — verifica se um número inteiro é primo.
+- ➕ **Somatório** — calcula a soma dos elementos de uma lista.
 - 🐇 **Fibonacci** — calcula termos da sequência de Fibonacci.
 - 🧮 **MDC** — calcula o máximo divisor comum de dois números pelo algoritmo de Euclides.
-- 🔀 **Quicksort** — ordena uma sequência de números utilizando o algoritmo Quicksort.
+- 🔀 **Quicksort** — ordena uma sequência de números.
 - 🔢 **Contagem** — conta a quantidade de números inteiros em um intervalo.
 
-## 💻 Linguagens
+## 💻 Tecnologias
 
 - Java
 - JavaScript
+- HTML5
+- CSS3
+
+## 🌐 Interface Web
+
+Além das implementações em Java e JavaScript, o projeto possui uma interface Web para executar os algoritmos diretamente pelo navegador.
+
+A interface está em `web/index.html` e utiliza `web/app.js` para conectar os campos da página às funções implementadas em JavaScript.
+
+### Como executar a interface
+
+Abra o arquivo `web/index.html` no navegador. Para uma melhor experiência durante o desenvolvimento, recomenda-se utilizar a extensão **Live Server** no VS Code.
+
+A interface permite testar:
+
+- Contagem
+- Número primo
+- Fibonacci
+- MDC
+- Quicksort
+- Somatório
 
 ## 📁 Estrutura do projeto
 
@@ -30,16 +51,19 @@ entregavel-algoritmos/
 │   ├── Mdc.java
 │   ├── Quicksort.java
 │   └── Somatorio.java
-└── javascript/
-    ├── contagem.js
-    ├── ehPrimo.js
-    ├── fibonacci.js
-    ├── mdc.js
-    ├── quicksort.js
-    └── somatorio.js
+├── javascript/
+│   ├── contagem.js
+│   ├── ehPrimo.js
+│   ├── fibonacci.js
+│   ├── mdc.js
+│   ├── quicksort.js
+│   └── somatorio.js
+└── web/
+    ├── index.html
+    └── app.js
 ```
 
-## ▶️ Como executar
+## ▶️ Como executar os algoritmos
 
 ### Java
 
@@ -50,7 +74,7 @@ javac EhPrimo.java
 java EhPrimo
 ```
 
-Exemplo para o Quicksort:
+Exemplo com Quicksort:
 
 ```bash
 javac Quicksort.java
@@ -65,7 +89,7 @@ Com o **Node.js** instalado, execute o arquivo desejado:
 node ehPrimo.js
 ```
 
-Exemplo para o Quicksort:
+Exemplo com Quicksort:
 
 ```bash
 node quicksort.js
@@ -73,7 +97,7 @@ node quicksort.js
 
 ## 🎯 Objetivo
 
-Praticar a implementação e a compreensão de algoritmos básicos de programação, comparando sua aplicação em Java e JavaScript.
+Praticar a implementação e a compreensão de algoritmos básicos de programação, comparando sua aplicação em Java e JavaScript e desenvolvendo uma interface Web para execução dos algoritmos.
 
 ## 👨‍💻 Projeto acadêmico
 

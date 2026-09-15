@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Algoritmos</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f4f7;
+            color: #222;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .subtitulo {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h2 {
+            margin-bottom: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 11px;
+            border: none;
+            border-radius: 6px;
+            background: #2563eb;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+
+        .resultado {
+            margin-top: 15px;
+            padding: 12px;
+            background: #f1f5f9;
+            border-radius: 6px;
+            min-height: 42px;
+        }
+
+        @media (max-width: 700px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Meus Algoritmos</h1>
+        <p class="subtitulo">Entregável #2 - Interface Web</p>
+
+        <div class="grid">
+            <div class="card">
+                <h2>Contagem</h2>
+                <input type="number" id="contagemPrimeiro" placeholder="Número inicial">
+                <input type="number" id="contagemN" placeholder="Número final">
+                <button onclick="executarContagem()">Executar</button>
+                <div class="resultado" id="contagemResultado">Resultado:</div>
+            </div>
+
+            <div class="card">
+                <h2>Número Primo</h2>
+                <input type="number" id="primoInput" placeholder="Digite um número">
+                <button onclick="executarPrimo()">Verificar</button>
+                <div class="resultado" id="primoResultado">Resultado:</div>
+            </div>
+
+            <div class="card">
+                <h2>Fibonacci</h2>
+                <input type="number" id="fibInput" placeholder="Digite a posição">
+                <button onclick="executarFibonacci()">Calcular</button>
+                <div class="resultado" id="fibResultado">Resultado:</div>
+            </div>
+
+            <div class="card">
+                <h2>MDC</h2>
+                <input type="number" id="mdcInput1" placeholder="Primeiro número">
+                <input type="number" id="mdcInput2" placeholder="Segundo número">
+                <button onclick="executarMdc()">Calcular MDC</button>
+                <div class="resultado" id="mdcResultado">Resultado:</div>
+            </div>
+
+            <div class="card">
+                <h2>QuickSort</h2>
+                <input type="text" id="quickInput" placeholder="Ex: 5, 3, 8, 1, 9, 2">
+                <button onclick="executarQuickSort()">Ordenar</button>
+                <div class="resultado" id="quickResultado">Resultado:</div>
+            </div>
+
+            <div class="card">
+                <h2>Somatório</h2>
+                <input type="text" id="somaInput" placeholder="Ex: 1, 2, 3, 4, 5">
+                <button onclick="executarSomatorio()">Calcular</button>
+                <div class="resultado" id="somaResultado">Resultado:</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../javascript/contagem.js"></script>
+    <script src="../javascript/ehPrimo.js"></script>
+    <script src="../javascript/fibonacci.js"></script>
+    <script src="../javascript/mdc.js"></script>
+    <script src="../javascript/quicksort.js"></script>
+    <script src="../javascript/somatorio.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+# Java
+*.class
+
+# Node.js
+node_modules/
+
+# VS Code
+.vscode/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
